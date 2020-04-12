@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>My Pictures Gallery</title>
+  
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="container cbox">
+      <div style="text-align:center;box-radius=20px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-center" style="background-color: #C38D9E; text-align:center;">
+          <a class="navbar-brand" href="#" style="align-self: center; background-color: #E8A87C;">Movies</a>
+          <a class="navbar-brand" href="index2.html" style="align-self: center; background-color:#E8A87C">Favourite Personalities</a>
+        </nav>
+    
+      </div>
+
+    </div>
+      <div class="row">
+        <div class="col-md-8 adiv">
+          <div class="row">
+            <div class="container-fluid" style="text-align:center">
+              <button id= "submit" onclick="RanMov()" style="background-color: #C38D9E; border-radius: 10px;">Random_Gen!</button>
+
+
+            <div class="container1">
+              <div class="inside1">
+                <img src="bala.jpg" id = 'p1'>
+                <img src="avr.jpg" id = 'p2'>
+                <img src="war.jpg" id = 'p3'>
+                <img src="world.jpg" id = 'p4'>
+                <img src="train.jpg" id = 'p5'>
+                <img src="contagion.jpg" id = 'p6'>
+                <img src="titanic.jpg" id = 'p7'>
+                <img src="gow.jpg" id = 'p8'>
+                <img src="ar15.jpg" id = 'p9'>
+              </div>
+           </div>
+         </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 bdiv">
+        <div class="row">
+          <div class="container-fluid" style="border:0px solid #0c0c0c; box-shadow:1px 1px 6px 0 black; border-radius: 13px; background:rgb(163, 245, 160); text-align:center;padding: 5%">
+            <div class="col-md-12 justify-content-start" ><h2>Utilities</h2>
+              <h3>BMI Calculator</h3>
+              <div class="container-fluid" style="border:0px solid orangered; box-shadow :#000; border-radius:  10px;padding: 10%; background-color: #E27D60">
+                <form class="form" id="form" onsubmit="return validateForm()">
+                  <div class="row-one">
+                    <input type="text" class="text-input" id="age" style="background-color: #555; border-radius: 8px;" autocomplete="off" required/><p class="text">Age</p>
+                    <label class="container">
+                    <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                  
+                  <div class="row-two">
+                    <input type="text" class="text-input" id="height" style="background-color: #555; border-radius: 8px;" autocomplete="off" required><p class="text">Height (cm)</p>
+                    <input type="text" class="text-input" id="weight"  style="background-color: #555; border-radius: 8px;"autocomplete="off" required><p class="text">Weight (kg)</p>
+                  </div>
+                  <button type="button" id="submit" onclick="countBmi()" style="background-color: #C38D9E;border-radius:10px; box-shadow :#000;">Submit</button>
+                  </form>
+                  <p></p>
+                  <p id= "space"> Your BMI is <span id="output1"></span> </p>
+                  <p id= "space"> Your are <span id="output2"></span> </p>
+              </div>
+            </div>
+          <div class="col-md-12 justify-content-end">
+            <h3>Know your Zodiac sign</h3>
+            
+            <div class="container-fluid" style="border:0px solid orangered;border-radius:10px; box-shadow :#000; background-color: #E27D60"> 
+              <div id = "box">
+                </div>
+                <h2> Enter your birthday. </h2>
+                <p>Month:  <input type="number" id="month" min="1" max="12" style="background-color: #555; border-radius: 8px;"></p>
+                <p>Day No:<input type="number" id="day" min="1" max="31" style="background-color: #555; border-radius: 8px;"></p>
+                <button type="button" id="animated" onclick="zodiac()" style="background-color: #C38D9E;border-radius:10px; box-shadow :#000;">Submit</button>
+                <p id="photo"></p>
+                <p id= "space"> Zodiac sign =<span id="output"></span> </p>
+                
+            </div>
+  
+          </div>  
+          </div>
+         </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="container" style="padding: 5%;">
+      <div class="footer" style="background-color: rgb(216, 34, 92); text-align: center; box-shadow: 1px 1px 6px 0px #000; padding: 5px;">
+        <h2>Contact Me</h2>
+        <h3>Akshat Dwivedi</h3>
+        <h5></h5>
+        <h5>201800026</h5> <h5>6</h5>
+      </div>
+    </div>
+    
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src = script.js></script>
+    <script src="myscripts.js"></script>
+
+  </body>
+</html>
